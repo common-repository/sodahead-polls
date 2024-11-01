@@ -1,0 +1,9 @@
+<html>
+  <head>
+    <script>
+      var poll_id = location.hash.slice(1);
+      (opener || parent).SodaHead.fire('poll_deleted', poll_id);
+      if(opener) setTimeout(function(){window.close()}, 100);
+    </script>
+  </head>
+</html>

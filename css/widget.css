@@ -1,0 +1,117 @@
+.sh-poll-box *{
+  box-sizing :border-box;
+  -moz-box-sizing:border-box;
+}
+
+.sh-poll button{
+  display: block;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  width: 100%;
+  margin: 5px 0;
+  padding: 0 5px;
+}
+
+.sh-poll-answer-title{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sh-poll-voted .sh-poll-answer-title{
+  font-weight: bold;
+}
+.sh-poll-answer-bar-container{
+  display: block;
+  height: 5px;
+}
+.sh-poll-answer-bar-container span{
+  display: block;
+  height: 100%;
+  background: gray;
+  transition: width 1s;
+  -webkit-transition: width 1s; /* Safari */
+}
+.sh-demo{
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.sh-poll-box .clearfix:before,
+.sh-poll-box .clearfix:after {
+  content: " ";
+  display: table;
+}
+.sh-poll-box .clearfix:after {
+  clear: both;
+}
+.sh-poll-box .clearfix {
+  zoom: 1;
+}
+.sh-flyout-box{
+  position: fixed;
+  bottom: 50px;
+  max-width: 600px;
+  right: -600px;
+  transition: height 1s ease-out;
+  -webkit-transition: height 1s ease-out;
+  transition: right 1s ease-out;
+  -webkit-transition: right 1s ease-out;
+  border: 1px solid gray;
+  border-right: 0;
+  background: white;
+  border-radius: 3px 0 0 3px;
+  padding: 5px;
+}
+
+.sh-flyout-close{
+  position: absolute;
+  cursor: pointer;
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: transparent url(../img/close.png) no-repeat;
+  left: -14px;
+  top: -14px;
+}
+
+.sh-post-voted .sh-pre-vote{
+  display: none;
+}
+.sh-pre-voted .sh-post-vote{
+  display: none;
+}
+
+.sh-poll-box .sh-edit-template{
+  display: none;
+}
+.sh-poll-box:hover .sh-edit-template{
+  display: block;
+  position: relative;
+}
+.sh-edit-template a{
+  background: white;
+  position: absolute;
+  padding: 2px;
+  border: 1px solid gray;
+  background: white;
+  left: 5px;
+  top: -30px;
+  box-shadow: 2px 2px 3px #333;
+}
+
+.sh-poll-box .sh-loading{
+  background: transparent url(../img/loading.gif) 0 0;
+  height: 16px;
+  width: 16px;
+  margin: 5px auto;
+}
+
+.rvml { behavior:url(#default#VML); }

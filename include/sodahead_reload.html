@@ -1,0 +1,9 @@
+<html>
+  <head>
+    <script>
+      var auth = location.hash.slice(1);
+      (opener || parent).SodaHead.fire('authed', auth);
+      if(opener) setTimeout(function(){window.close()}, 100);
+    </script>
+  </head>
+</html>

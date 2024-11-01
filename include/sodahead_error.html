@@ -1,0 +1,10 @@
+<html>
+  <head>
+    <script>
+      var fields = location.hash.slice(1).split(',');
+      if('console' in window) console.log(fields);
+      (opener || parent).SodaHead.fire('error', [fields]);
+      if(opener) setTimeout(function(){window.close()}, 100);
+    </script>
+  </head>
+</html>
